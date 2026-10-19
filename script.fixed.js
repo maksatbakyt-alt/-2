@@ -522,7 +522,7 @@ function renderCatalog() {
         detailsButton.addEventListener('click', (event) => {
             event.preventDefault();
             event.stopPropagation();
-            showQuickCard(h.id, detailsButton);
+            openModal(h.id);
         });
 
         info.appendChild(title);
@@ -617,66 +617,6 @@ function openModal(id) {
     const mtitle = $id('modal-title');
     if (mtitle) { mtitle.tabIndex = -1; mtitle.focus(); }
 }
-
-function createQuickCardElement(){
-    let el = document.createElement('div');
-    el.id = 'quick-card';
-    el.className = 'quick-card';
-    el.style.display = 'none';
-    el.innerHTML = `<span class="qc-close" id="qc-close">×</span><div id="qc-content"></div>`;
-    document.body.appendChild(el);
-    el.querySelector('#qc-close').addEventListener('click', hideQuickCard);
-    return el;
-}
-
-let _quickCardEl = null;
-function getQuickCard(){
-    if(!_quickCardEl) _quickCardEl = document.getElementById('quick-card') || createQuickCardElement();
-    return _quickCardEl;
-}
-
-function hideQuickCard(){
-    const qc = getQuickCard();
-    if(qc){ qc.style.display = 'none'; }
-}
-
-function showQuickCard(id, anchor){
-    const h = hybrids.find(x=>x.id===id);
-    if(!h) return;
-    const t = translations[currentLang] || translations.ru;
-    const qc = getQuickCard();
-    const content = qc.querySelector('#qc-content');
-    const rows = [];
-    rows.push([t.purposeLabel || 'Назначение', h.purpose || '—']);
-    rows.push([t.faoLabel || 'ФАО', h.fao || '—']);
-    if(h.days) rows.push([t.daysLabel || 'Период', h.days]);
-    if(h.height) rows.push([t.heightLabel || 'Высота', `${h.height} ${t.unitCm || 'см'}`]);
-    if(h.thousandSeedsMass) rows.push([t.massLabel || 'Масса 1000', `${h.thousandSeedsMass} ${t.unitGram || 'г'}`]);
-    rows.push([t.yieldAmountLabel || 'Потенц. урож.', formatYield(h, t)]);
-
-    const specsHtml = rows.map(r=>`<div class="qc-row"><strong>${r[0]}</strong><span>${r[1]}</span></div>`).join('');
-
-    content.innerHTML = `<h4>FENIKKS ${h.name}</h4>
-                         <p style="font-size:14px; color:#444;">${h.desc || ''}</p>
-                         ${specsHtml}
-                         <div style="margin-top:12px; text-align:center;"><button class="btn-primary" id="qc-more">Открыть полную информацию</button></div>`;
-
-    qc.style.display = 'block';
-
-    const moreBtn = qc.querySelector('#qc-more');
-    if(moreBtn){
-        moreBtn.onclick = function(){ hideQuickCard(); openModal(id); };
-    }
-}
-
-document.addEventListener('click', function(e){
-    const qc = document.getElementById('quick-card');
-    if(!qc) return;
-    if(qc.style.display !== 'block') return;
-    if(e.target.closest && e.target.closest('.quick-card')) return;
-    if(e.target.closest && e.target.closest('.details-btn')) return;
-    hideQuickCard();
-});
 
 function toggleCompare(id, isChecked) {
     if (isChecked) {
