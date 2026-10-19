@@ -23,17 +23,44 @@ const hybrids = [
         ]
     },
     {
+        id: 'afina_plus',
+        name: 'Афина Плюс',
+        fao: '380-400',
+        yield: 13,
+        purpose: 'Зерно',
+        height: '180-220',
+        cobHeight: '135-155',
+        earLength: '18-20',
+        rows: '16-18',
+        grainsPerRow: '36-38',
+        thousandSeedsMass: '365',
+        img: 'https://placehold.co/400x300/1b4d3e/white?text=FENIKKS+Afina+Plus',
+        desc: 'Высокопродуктивный зерновой гибрид с отличными показателями массы 1000 зерен.',
+        sections: [
+            {
+                title: 'Характеристики FENIKKS Афина Плюс',
+                paragraphs: [
+                    'ФАО: 380 - 400.',
+                    'Высота растения: 180–220 см. Прикрепление початка: 135–155 см.',
+                    'Длина початка: 18–20 см. Початков на растении: 1–2 (в зависимости от густоты стояния растений).',
+                    'Рядов зерен/зерен в ряду: 16–18 / 36–38.',
+                    'Масса 1000 зерен: 365 г. Уборочная влажность: 14–16%. Урожайность: 12–14 т/га.',
+                    'Регионы для возделывания: Алматинская область, область Жетысу, Кордай, Жамбылская область.'
+                ]
+            }
+        ]
+    },
+    {
         id: 'aurora',
         name: 'Аврора',
         fao: 360,
-        yield: 14,
+        yield: 12,
         purpose: 'Зерно',
         height: '280',
-        cobHeight: '92',
-        days: '103-106',
+        cobHeight: '120-130',
         earLength: '18-20',
-        rows: '16-18',
-        grainsPerRow: '36',
+        rows: '14-16',
+        grainsPerRow: '34-36',
         thousandSeedsMass: '335',
         img: 'https://placehold.co/400x300/1b4d3e/white?text=FENIKKS+Aurora',
         desc: 'Чрезвычайно раннеспелый зерновой гибрид с высокой и стабильной урожайностью.',
@@ -41,17 +68,11 @@ const hybrids = [
             {
                 title: 'Характеристики FENIKKS Аврора',
                 paragraphs: [
-                    'Период роста от всходов до созревания составляет 103–106 дней и требует активной аккумулированной температуры ≥10°C на уровне 2100–2150°C. Это чрезвычайно раннеспелый сорт.',
-                    'Листовые оболочки у сеянцев фиолетовые, листья зеленые, стебли взрослых растений светло-фиолетовые. Высота растения 250 см, положение початка 92 см, около 17 листьев. Кисточки светло-зеленые, пыльники желтые. Нити женского початка красные, мужское соцветие имеет 4–6 ветвей первого уровня.',
-                    'Початки аккуратные и длинные: длина 19 см, диаметр 4,9 см, около 16 рядов, 36–40 зерен в рядке. Выход семян 85,6%. Зерна зубчатые, желтые.',
-                    'По данным Центра надзора, инспекции и тестирования качества зерна и продуктов Министерства сельского хозяйства (Харбин): сырой белок 9,68%, сырой жир 4,59%, сырой крахмал 72,67%, лизин 0,30%, насыпная плотность 742 г/л. Урожайность с гектара — 13 тонн.'
-                ]
-            },
-            {
-                title: 'Основные преимущества',
-                items: [
-                    'Сильная комплексная устойчивость к различным заболеваниям и насекомым-вредителям.',
-                    'Высокая и стабильная урожайность в различных климатических условиях.'
+                    'ФАО: 360. Высота растения: 280 см. Длина початка: 18–20 см.',
+                    'Прикрепление початка: 120–130 см. Початков на растении: 1.',
+                    'Рядов зерен/зерен в ряду: 14–16 / 34–36. Масса 1000 зерен: 335 г.',
+                    'Уборочная влажность: 14–16%. Урожайность: 10–14 т/га.',
+                    'Регионы для возделывания: Алматинская область, область Жетысу, Кордай, Жамбылская область. Может высеваться как вторая культура в сезоне в Жамбылской и Туркестанской областях.'
                 ]
             }
         ]
@@ -60,13 +81,13 @@ const hybrids = [
         id: 'atlant',
         name: 'Атлант',
         fao: 480,
-        yield: 16,
+        yield: 15,
         purpose: 'Зерно',
         height: '200',
-        cobHeight: '112',
-        earLength: '19',
+        cobHeight: '165-175',
+        earLength: '18-22',
         rows: '18-20',
-        grainsPerRow: '38',
+        grainsPerRow: '36-38',
         thousandSeedsMass: '370',
         img: 'atlant.jpg.jpg',
         desc: 'Компактный зерновой гибрид с высокой урожайностью и сильной устойчивостью к болезням.',
@@ -74,18 +95,11 @@ const hybrids = [
             {
                 title: 'Характеристики FENIKKS Атлант',
                 paragraphs: [
-                    'Растение компактное, хорошо вентилируемое, с хорошей светопроницаемостью.',
-                    'Высота растения 280 см, высота прикрепления початка 112 см, длина початка 19,7 см, толщина початка 5,4 см, 16 рядов, 34 зерна в ряду. Зерна желтые, ось белая, полузубчатая форма, масса тысячи зерен 373 г.',
-                    'Сырой протеин зерна — 9,12%, сырой жир — 3,65%, сырой крахмал — 76,2%, лизин — 0,278%. Высокая устойчивость к карликовой мозаике, пятнистости листьев, стеблевой гнили, головне и кукурузному мотыльку.',
-                    'Средняя урожайность в 2022 году составила 14 350 кг/га.'
-                ]
-            },
-            {
-                title: 'Основные преимущества',
-                items: [
-                    'Высокая и стабильная урожайность на различных участках и в разных условиях среды.',
-                    'Сильная устойчивость к распространенным болезням кукурузы: мозаике, парше и ржавчине.',
-                    'Широкая адаптивность, включая сухие и влажные местоположения.'
+                    'ФАО: 480. Высота растения: 200 см. Длина початка: 18–22 см.',
+                    'Прикрепление початка: 165–175 см. Початков на растении: 1.',
+                    'Рядов зерен/зерен в ряду: 18–20 / 36–38. Масса 1000 зерен: 370 г.',
+                    'Уборочная влажность: 16–18%. Урожайность: 14–16 т/га.',
+                    'Регионы для возделывания: Алматинская область, область Жетысу, Кордай, Жамбылская область.'
                 ]
             }
         ]
@@ -94,34 +108,52 @@ const hybrids = [
         id: 'gobi',
         name: 'Гоби',
         fao: 520,
-        yield: 18,
+        yield: 14,
         purpose: 'Зерно',
         height: '310',
-        cobHeight: '105',
-        days: '125',
+        cobHeight: '165-175',
         earLength: '20-24',
         rows: '18-20',
         grainsPerRow: '40',
         thousandSeedsMass: '358',
         img: 'gobi.jpg',
-        desc: 'Чемпион 2018. Позднеспелый гибрид с лучшей устойчивостью к болезням и жаре.',
+        desc: 'Позднеспелый гибрид с лучшей устойчивостью к болезням и жаре.',
         sections: [
             {
                 title: 'Характеристики FENIKKS Гоби',
                 paragraphs: [
-                    'Подходит для посева в районах с активной аккумулированной температурой ≥10°C на уровне 2600–2800°C.',
-                    'Среднепоздний сорт, вегетационный период 125 дней. Тип растения компактный, высота 288 см, прикрепление початка 105 см, всего 20 листьев.',
-                    'Початок трубчатого типа, длина 18–24 см, 18–20 рядов, диаметр колоса 4,8 см, стержень красный, зерно желтое полузубчатое, 35–38 зерен в ряду, масса 1000 зерен 333 г. Выход семян 83,6%.',
-                    'Пробная масса зерна 778 г/л, сырой протеин 8,86%, сырой жир 3,5%, сырой крахмал 74,01%, лизин 0,28%.'
+                    'ФАО: 520. Высота растения: 310 см. Длина початка: 20–24 см.',
+                    'Прикрепление початка: 165–175 см. Початков на растении: 1.',
+                    'Рядов зерен/зерен в ряду: 18–20 / 40. Масса 1000 семян: 358 г.',
+                    'Уборочная влажность: 14–16%. Урожайность: 12–16 т/га.',
+                    'Регионы для возделывания: Алматинская область, область Жетысу, Кордай, Жамбылская область.'
                 ]
-            },
+            }
+        ]
+    },
+    {
+        id: 'gobi_plus',
+        name: 'Гоби плюс',
+        fao: 580,
+        yield: 13,
+        purpose: 'Зерно',
+        height: '250',
+        cobHeight: '120',
+        earLength: '22-26',
+        rows: '16-18',
+        grainsPerRow: '45-48',
+        thousandSeedsMass: '360',
+        img: 'https://placehold.co/400x300/1b4d3e/white?text=FENIKKS+Gobi+Plus',
+        desc: 'Высокопродуктивный гибрид с длинным початком и крупным зерном.',
+        sections: [
             {
-                title: 'Устойчивость и урожайность',
-                items: [
-                    'Устойчивость к колосовой гнили, средняя устойчивость к стеблевой гнили, высокая устойчивость к короткой мозаике и грубой усушке.',
-                    'Засухоустойчивость, устойчивость к высоким температурам, высокая устойчивость к полеганию.',
-                    'Урожайность 14 600 кг/га.',
-                    'Гоби — самый сильный гибрид с поздней зрелостью и наилучшей устойчивостью к болезням; рекомендуется размещать в относительно самом жарком месте.'
+                title: 'Характеристики FENIKKS Гоби плюс',
+                paragraphs: [
+                    'ФАО: 580. Высота растения: 2,5 метра (250 см). Длина початка: 22–26 см.',
+                    'Прикрепление початка: 1,2 м (120 см). Початков на растении: 1.',
+                    'Рядов зерен/зерен в ряду: 16–18 / 45–48. Масса 1000 семян: 360 г.',
+                    'Уборочная влажность: 16%. Урожайность: 12–14 т/га.',
+                    'Регионы для возделывания: Алматинская, Жамбылская, Туркестанская области.'
                 ]
             }
         ]
@@ -150,20 +182,6 @@ const hybrids = [
                     'Пробная масса зерна 781 г/л, сырой протеин 8,95%, сырой жир 3,6%, сырой крахмал 74,42%, лизин 0,31%.',
                     'Урожайность 23 262 кг/га (влажность 25%).'
                 ]
-            },
-            {
-                title: 'Примечательные особенности',
-                items: [
-                    'Быстрая влагоотдача',
-                    'Хорошо развитая корневая система, устойчивость к полеганию',
-                    'Реализуется на рынке США'
-                ]
-            },
-            {
-                title: 'Подходящая область',
-                paragraphs: [
-                    'Подходит для посадки в районах с активной аккумулирующей температурой ≥10°C и выше 2650°C.'
-                ]
             }
         ]
     },
@@ -171,9 +189,10 @@ const hybrids = [
         id: '958plus',
         name: '958Plus',
         fao: 580,
-        yield: 20,
+        yield: 17,
         purpose: 'Зерно',
         height: '280',
+        cobHeight: '165-170',
         earLength: '25',
         rows: '14-18',
         grainsPerRow: '46',
@@ -184,8 +203,11 @@ const hybrids = [
             {
                 title: 'Характеристики FENIKKS 958Plus',
                 paragraphs: [
-                    'Широкозерный высокопродуктивный гибрид для интенсивной агротехники.',
-                    'Высота растения 280 см, длина початка 25 см, 14–18 рядов, 46 зерен в ряду, масса 1000 зерен 365 г. Потенциальная урожайность около 20 т/га.'
+                    'ФАО: 580. Высота растения: 280 см. Длина початка: 25 см.',
+                    'Прикрепление початка: 165–170 см. Початков на растении: 1.',
+                    'Рядов зерен/зерен в ряду: 14–18 / 46. Масса 1000 семян: 365 г.',
+                    'Уборочная влажность: 14–16%. Урожайность: 16–18 т/га.',
+                    'Регионы для возделывания: Алматинская, Жетысу, Жамбылская и Туркестанская области.'
                 ]
             }
         ]
@@ -209,19 +231,36 @@ const hybrids = [
             {
                 title: 'Характеристики FENIKKS Франческа',
                 paragraphs: [
-                    'Срок вегетации при весеннем посеве — 130 дней. Сеянцы имеют пурпурные оболочки, темно-зеленые листья, пурпурные края, темно-фиолетовые пыльники и зеленые чешуи.',
-                    'Тип растения полукомпактный, высота 287 см, высота початка 113 см, 21 лист. Колос трубчатый, длина початка 25,5 см, 16–18 рядов, диаметр 4,7 см, стержень красный, зерно желтое полузубчатое. Масса 100 зерен 33,85 г.',
-                    'Пробная масса зерна 798 г/л, сырой протеин 8,84%, сырой жир 3,43%, сырой крахмал 74,63%, лизин 0,29%.',
+                    'Срок вегетации при весеннем посеве — 130 дней. Тип растения полукомпактный, высота 287 см, высота початка 113 см, 21 лист.',
                     'Урожайность 22 950 кг/га (влажность 20%).'
                 ]
-            },
+            }
+        ]
+    },
+    {
+        id: 'f98',
+        name: 'Ф98',
+        fao: '800 (силос)',
+        yield: 60,
+        purpose: 'Силос',
+        height: '400-500',
+        cobHeight: '180-190',
+        earLength: '28-32',
+        rows: '18-22',
+        grainsPerRow: '—',
+        thousandSeedsMass: '400+',
+        img: 'https://placehold.co/400x300/1b4d3e/white?text=FENIKKS+F98',
+        desc: 'Высокопродуктивный силосний гибрид с мощным накоплением зеленой массы.',
+        sections: [
             {
-                title: 'Примечательные особенности',
-                items: [
-                    'Хорошая устойчивость к болезням',
-                    'Высокая урожайность',
-                    'Большой объемный вес',
-                    'Высокая влагоотдача (высыхание при зеленом стебле)'
+                title: 'Характеристики FENIKKS Ф98',
+                paragraphs: [
+                    'ФАО: 800, силосное направление. Высота растения: 4–5 м.',
+                    'Длина початка: 28–32 см. Прикрепление початка: 180–190 см.',
+                    'Рядов зерен/зерен в ряду: 18–22. Початков на растении: 1 и 2 при невысокой норме высева.',
+                    'Масса 1000 семян: 400 г и выше. Уборочная влажность: 30–35% на силос.',
+                    'Урожайность: свыше 60 т силосной массы с 1 га.',
+                    'Регионы для возделывания: Алматинская, Жетысу, Жамбылская и Туркестанская области.'
                 ]
             }
         ]
@@ -230,14 +269,13 @@ const hybrids = [
         id: 'celentano',
         name: 'Челентано',
         fao: 620,
-        yield: 22,
+        yield: 19,
         purpose: 'Силос',
         height: '420',
-        cobHeight: '98',
-        days: '135',
+        cobHeight: '170-180',
         earLength: '24-28',
         rows: '18-20',
-        grainsPerRow: '44',
+        grainsPerRow: '46',
         thousandSeedsMass: '375',
         img: 'chelentano.jpg',
         desc: 'Силосный гибрид мощного роста для юго-востока Казахстана.',
@@ -245,23 +283,11 @@ const hybrids = [
             {
                 title: 'Характеристики FENIKKS Челентано',
                 paragraphs: [
-                    'Подходит для посева в районах с активной аккумулированной температурой ≥10°C на уровне 2700–2900°C.',
-                    'Период весеннего сева 135 дней. Тип растения полукомпактный, высота около 356 см, прикрепление початка 98 см, около 21 листа.',
-                    'Длина початка около 23,5 см, 16–18 рядов, ось красная, семя желтое зубовидное, вес 1000 зерен около 425 г, выход 85,5%.',
-                    'Масса семян 756 г/л, сырой протеин 10,70%, сырой жир 3,98%, сырой крахмал 71,83%.'
-                ]
-            },
-            {
-                title: 'Показатели производственных испытаний',
-                paragraphs: [
-                    'В 2021–2023 годах в региональных испытаниях зон средней и поздней зрелости средняя урожайность составила 14 200 кг/га.'
-                ]
-            },
-            {
-                title: 'Технология выращивания',
-                paragraphs: [
-                    'Рекомендуется выращивание на орошении на более плодородном участке, плотность 70 000–75 000 шт/га.',
-                    'Районы адаптации: юго-восток Казахстана.'
+                    'ФАО: 620. Высота растения: 420 см. Длина початка: 24–28 см.',
+                    'Прикрепление початка: 170–180 см. Початков на растении: 1.',
+                    'Рядов зерен/зерен в ряду: 18–20 / 46. Масса 1000 семян: 375 г.',
+                    'Уборочная влажность: 16–18%. Урожайность: 18–20 т/га.',
+                    'Регионы для возделывания: Алматинская область, область Жетысу, Кордай, Жамбылская область.'
                 ]
             }
         ]
@@ -270,14 +296,13 @@ const hybrids = [
         id: 'eros',
         name: 'Эрос',
         fao: 650,
-        yield: 26,
+        yield: 19,
         purpose: 'Силос',
         height: '310',
-        cobHeight: '108.5',
-        days: '130',
-        earLength: '19',
-        rows: '16',
-        grainsPerRow: '38',
+        cobHeight: '170-180',
+        earLength: '20-24',
+        rows: '16-18',
+        grainsPerRow: '38-45',
         thousandSeedsMass: '359',
         img: 'Eros.jpg',
         desc: 'Высокоурожайный силосный гибрид с отличным накоплением массы.',
@@ -285,18 +310,11 @@ const hybrids = [
             {
                 title: 'Характеристики FENIKKS Эрос',
                 paragraphs: [
-                    'Подходит для посева при активной совокупной температуре ≥10°C на уровне 2700–2800°C.',
-                    'От всходов до созревания на северо-западной территории весеннего посева проходит 130 дней. Тип растения полукомпактный, 21 лист, высота 315 см, высота метелки 108,5 см.',
-                    'Початок красный, длина 20–22 см, 16–20 рядов, 39–45 зерен в ряду. Зерна желтые полузубчатые, выход семян 86,5%, масса 1000 зерен 386 г.',
-                    'Умеренно устойчив к початковой гнили, устойчив к стеблевой гнили и крупной пятнистости.',
-                    'Качество (2022): натура 804 г/л, сырой протеин 9,54%, сырой жир 3,07%, сырой крахмал 75,26%, лизин 0,30%.'
-                ]
-            },
-            {
-                title: 'Показатели урожайности',
-                paragraphs: [
-                    'Региональные испытания 2021–2022 годов: средняя урожайность 16 800 кг/га за два года.',
-                    'Производственное испытание 2023 года: средняя урожайность 18 100 кг/га.'
+                    'ФАО: 650. Высота растения: 310 см. Длина початка: 20–24 см.',
+                    'Прикрепление початка: 170–180 см. Початков на растении: 1.',
+                    'Рядов зерен/зерен в ряду: 16–18 / 38–45. Масса 1000 семян: 359 г.',
+                    'Уборочная влажность: 16–18%. Урожайность: 16–22 т/га.',
+                    'Регионы для возделывания: Алматинская, Жетысу, Жамбылская и Туркестанская области.'
                 ]
             }
         ]
@@ -380,13 +398,12 @@ const translations = {
         chatIntro: 'Здравствуйте! Я цифровой агроном. Напишите ваш регион и тип почвы, и я помогу подобрать идеальный гибрид кукурузы.',
         chatPlaceholder: 'Введите ваш вопрос...',
         chatDefaultReply: 'Для точного ответа мне нужно больше данных. Подскажите, планируете ли вы полив (орошение)?',
-        chatSouthReply: 'Для южных регионов с хорошим орошением отлично подойдет FENIKKS Челентано (ФАО 510). Максимальная отдача зерна!',
+        chatSouthReply: 'Для южных регионов с хорошим орошением отлично подойдет FENIKKS Челентано (ФАО 620). Максимальная отдача!',
         championBadge: '⭐ Чемпион 2018',
         videoCarouselTitle: '🎥 Видеообзоры гибридов кукурузы'
     }
 };
 
-// small helpers
 function $id(id) { return document.getElementById(id); }
 
 function translatePage(lang) {
@@ -497,15 +514,14 @@ function renderCatalog() {
         description.className = 'catalog-info-description';
         description.textContent = `${t.faoLabel || 'ФАО'}: ${h.fao} | ${t.yieldLabel || 'Урожайность'}: ${formatYield(h, t)}`;
 
-                const detailsButton = document.createElement('button');
+        const detailsButton = document.createElement('button');
         detailsButton.type = 'button';
         detailsButton.className = 'btn-primary details-btn';
         detailsButton.setAttribute('data-id', h.id);
         detailsButton.textContent = t.detailsButton || 'Подробно';
-                detailsButton.addEventListener('click', (event) => {
+        detailsButton.addEventListener('click', (event) => {
             event.preventDefault();
             event.stopPropagation();
-            // show small quick card near the button with item info
             showQuickCard(h.id, detailsButton);
         });
 
@@ -598,12 +614,10 @@ function openModal(id) {
     const content = modal.querySelector('.modal-content');
     if (content) content.scrollTop = 0;
 
-    // focus for accessibility
     const mtitle = $id('modal-title');
     if (mtitle) { mtitle.tabIndex = -1; mtitle.focus(); }
 }
 
-// ------------------- Quick info card -------------------
 function createQuickCardElement(){
     let el = document.createElement('div');
     el.id = 'quick-card';
@@ -611,7 +625,6 @@ function createQuickCardElement(){
     el.style.display = 'none';
     el.innerHTML = `<span class="qc-close" id="qc-close">×</span><div id="qc-content"></div>`;
     document.body.appendChild(el);
-    // close button
     el.querySelector('#qc-close').addEventListener('click', hideQuickCard);
     return el;
 }
@@ -633,7 +646,6 @@ function showQuickCard(id, anchor){
     const t = translations[currentLang] || translations.ru;
     const qc = getQuickCard();
     const content = qc.querySelector('#qc-content');
-    // Build larger content: title, description, key specs
     const rows = [];
     rows.push([t.purposeLabel || 'Назначение', h.purpose || '—']);
     rows.push([t.faoLabel || 'ФАО', h.fao || '—']);
@@ -649,23 +661,20 @@ function showQuickCard(id, anchor){
                          ${specsHtml}
                          <div style="margin-top:12px; text-align:center;"><button class="btn-primary" id="qc-more">Открыть полную информацию</button></div>`;
 
-    // show centered (use CSS fixed centering)
     qc.style.display = 'block';
 
-    // attach more button to open full modal
     const moreBtn = qc.querySelector('#qc-more');
     if(moreBtn){
         moreBtn.onclick = function(){ hideQuickCard(); openModal(id); };
     }
 }
 
-// hide quick-card on outside click
 document.addEventListener('click', function(e){
     const qc = document.getElementById('quick-card');
     if(!qc) return;
     if(qc.style.display !== 'block') return;
-    if(e.target.closest && e.target.closest('.quick-card')) return; // click inside
-    if(e.target.closest && e.target.closest('.details-btn')) return; // click on button
+    if(e.target.closest && e.target.closest('.quick-card')) return;
+    if(e.target.closest && e.target.closest('.details-btn')) return;
     hideQuickCard();
 });
 
@@ -718,8 +727,8 @@ function renderComparison() {
 }
 
 function recommendSeed() {
-    const region = $id('wiz-region') ? $id('wiz-region').value : null;
-    const purpose = $id('wiz-purpose') ? $id('wiz-purpose').value : null;
+    const region = $id('wiz-region') ?$id('wiz-region').value : null;
+    const purpose = $id('wiz-purpose') ?$id('wiz-purpose').value : null;
     let rec = hybrids[0] || null;
 
     if (region === 'south') {
@@ -730,7 +739,7 @@ function recommendSeed() {
     if (region === 'north') {
         if (purpose === 'grain') rec = hybrids.find(h => h.id === 'aurora');
         if (purpose === 'drought') rec = hybrids.find(h => h.id === 'aurora');
-        if (purpose === 'silage') rec = hybrids.find(h => h.id === 'takelau');
+        if (purpose === 'silage') rec = hybrids.find(h => h.id === 'f98');
     }
 
     const t = translations[currentLang] || translations.ru;
@@ -741,8 +750,8 @@ function recommendSeed() {
 }
 
 function calculateSeeds() {
-    const area = parseFloat($id('calc-area') ? $id('calc-area').value : 0);
-    const density = parseFloat($id('calc-density') ? $id('calc-density').value : 0);
+    const area = parseFloat($id('calc-area') ?$id('calc-area').value : 0);
+    const density = parseFloat($id('calc-density') ?$id('calc-density').value : 0);
     const seedsPerBag = 80;
 
     if (!area || area <= 0) {
@@ -814,8 +823,6 @@ function sendChatMessage() {
     }, 700);
 }
 
-// ================= VIDEO CAROUSEL LOGIC =================
-// Updated to use local MP4 files uploaded to the project root. Filenames are URL-encoded when used as video src.
 const seedVideos = [
     { name: 'Афина — обзор', videoUrl: 'AFINA VIDEO.mp4' },
     { name: 'Афина — доп', videoUrl: 'afina+.mp4' },
@@ -840,7 +847,6 @@ function renderVideoCarousel() {
         card.className = 'video-card';
 
         const isEmbed = typeof item.videoUrl === 'string' && item.videoUrl.includes('youtube');
-        // encode local filenames that may contain spaces or special chars
         const safeUrl = !isEmbed && typeof item.videoUrl === 'string' ? encodeURI(item.videoUrl) : item.videoUrl;
         const mediaHtml = isEmbed
             ? `<iframe src="${item.videoUrl}" frameborder="0" allowfullscreen></iframe>`
@@ -850,7 +856,6 @@ function renderVideoCarousel() {
         track.appendChild(card);
     });
 }
-
 
 function getVisibleCardsCount() {
     if (window.innerWidth <= 480) return 1;
@@ -866,7 +871,7 @@ function moveCarousel(direction) {
     if (!cards.length) return;
 
     const visible = getVisibleCardsCount();
-    const gap = 20; // should match CSS gap
+    const gap = 20;
     const cardWidth = Math.round(cards[0].getBoundingClientRect().width) + gap;
 
     const maxIndex = Math.max(0, cards.length - visible);
@@ -898,26 +903,25 @@ window.addEventListener('load', () => {
     renderCatalog();
     const search = $id('searchInput');
     if (search) search.addEventListener('input', filterCatalog);
-    if ($id('recommend-btn')) $id('recommend-btn').addEventListener('click', recommendSeed);
-    if ($id('calculate-btn')) $id('calculate-btn').addEventListener('click', calculateSeeds);
+    if ($id('recommend-btn'))$id('recommend-btn').addEventListener('click', recommendSeed);
+    if ($id('calculate-btn'))$id('calculate-btn').addEventListener('click', calculateSeeds);
     document.querySelectorAll('.faq-question').forEach(item => item.addEventListener('click', () => toggleFaq(item)));
-    if ($id('fab-top')) $id('fab-top').addEventListener('click', () => window.scrollTo(0, 0));
-    if ($id('fab-ai')) $id('fab-ai').addEventListener('click', toggleChat);
-    if ($id('chat-close')) $id('chat-close').addEventListener('click', toggleChat);
-    if ($id('chat-send')) $id('chat-send').addEventListener('click', sendChatMessage);
-    if ($id('chat-input-field')) $id('chat-input-field').addEventListener('keydown', handleChatEnter);
-    if ($id('lang-switch')) $id('lang-switch').addEventListener('click', toggleLanguage);
-    if ($id('modal-close')) $id('modal-close').addEventListener('click', closeModal);
-    if ($id('hybrid-modal')) $id('hybrid-modal').addEventListener('click', (event) => {
+    if ($id('fab-top'))$id('fab-top').addEventListener('click', () => window.scrollTo(0, 0));
+    if ($id('fab-ai'))$id('fab-ai').addEventListener('click', toggleChat);
+    if ($id('chat-close'))$id('chat-close').addEventListener('click', toggleChat);
+    if ($id('chat-send'))$id('chat-send').addEventListener('click', sendChatMessage);
+    if ($id('chat-input-field'))$id('chat-input-field').addEventListener('keydown', handleChatEnter);
+    if ($id('lang-switch'))$id('lang-switch').addEventListener('click', toggleLanguage);
+    if ($id('modal-close'))$id('modal-close').addEventListener('click', closeModal);
+    if ($id('hybrid-modal'))$id('hybrid-modal').addEventListener('click', (event) => {
         if (event.target.id === 'hybrid-modal') closeModal();
     });
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') closeModal();
     });
 
-        translatePage(currentLang);
+    translatePage(currentLang);
 
-    // Delegated click handler for details buttons (works even if buttons are re-rendered)
     const catalogContainer = $id('catalog-container');
     if (catalogContainer && !catalogContainer._hasDetailsDelegate) {
         catalogContainer.addEventListener('click', (e) => {
@@ -927,11 +931,10 @@ window.addEventListener('load', () => {
                 if (id) openModal(id);
             }
         });
-        // mark as attached to avoid duplicate handlers on reload
         catalogContainer._hasDetailsDelegate = true;
     }
 
     renderVideoCarousel();
-    if ($id('carousel-prev')) $id('carousel-prev').addEventListener('click', () => moveCarousel('prev'));
-    if ($id('carousel-next')) $id('carousel-next').addEventListener('click', () => moveCarousel('next'));
+    if ($id('carousel-prev'))$id('carousel-prev').addEventListener('click', () => moveCarousel('prev'));
+    if ($id('carousel-next'))$id('carousel-next').addEventListener('click', () => moveCarousel('next'));
 });
