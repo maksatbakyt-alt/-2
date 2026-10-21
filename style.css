@@ -123,6 +123,17 @@ header p { font-size: 1.3em; color: #a3e2c9; }
     overflow-y: auto;
     box-shadow: 0 16px 40px rgba(0,0,0,0.2);
 }
+
+/* When we need to show more detailed content, expand modal */
+.modal-content.full {
+    width: 95%;
+    max-width: 1200px;
+    max-height: 95vh;
+    padding: 28px 28px 28px;
+}
+
+.modal-desc { white-space: pre-wrap; font-size: 15px; }
+
 .close-btn {
     position: sticky;
     float: right;
